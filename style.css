@@ -1,12 +1,12 @@
 :root {
-  --clr-primary:#0057ff;
-  --clr-primary-light:#e5efff;
-  --clr-dark:#111827;
-  --clr-light:#f9fafb;
-  --clr-gray:#6b7280;
-  --radius:6px;
-  --max-width:1100px;
-  --font:'Inter',system-ui,sans-serif;
+  --clr-primary: #0057ff;        /* main blue */
+  --clr-primary-light: #e5efff;  /* pale blue background */
+  --clr-dark: #0a0a0a;           /* dark text (unchanged) */
+  --clr-light: #ffffff;          /* white page bg */
+  --clr-gray: #4a4a4a;           /* softer gray text */
+  --radius: 6px;
+  --max-width: 1100px;
+  --font: 'Inter', system-ui, sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:var(--font);color:var(--clr-dark);background:var(--clr-light);line-height:1.6;}
@@ -75,3 +75,4 @@ footer a{color:#d1d5db;text-decoration:none;}
   nav ul{display:none;flex-direction:column;gap:1rem;background:#fff;position:absolute;right:0;top:60px;padding:1rem 2rem;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,.1);}
   nav ul.open{display:flex;}
 }
+
