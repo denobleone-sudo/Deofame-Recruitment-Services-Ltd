@@ -3,102 +3,91 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Deofame Recruitment Services Ltd – Last-Minute Care Staffing</title>
-  <meta name="description" content="Elkfield-style website for Deofame – last-minute carers & nurses 24/7.">
+  <title>Deofame – Premier Care Staffing</title>
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
 </head>
 <body>
 
-<!-- Header (sticky, grey bar) -->
-<header class="site-header">
+<!-- Header -->
+<header class="glass-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <img src="https://i.imgur.com/8nqhOZ1.png" alt="Deofame Recruitment" width="220" height="55">
-    </a>
-    <nav class="main-nav">
+    <a href="index.html" class="logo">Deofame<span>.</span></a>
+    <nav class="nav-links">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="recruitment.html">Recruitment</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </div>
 </header>
 
-<!-- Hero (full-width gradient) -->
+<!-- Hero -->
 <section class="hero">
-  <div class="hero-inner">
-    <h1>Last-Minute Care Staffing – <em>Solved in Minutes</em></h1>
-    <p>Deofame Recruitment Services Ltd bridges the gap between care homes needing urgent cover and qualified healthcare professionals seeking flexible work.</p>
-    <a href="services.html" class="btn-primary large">View Our Services</a>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="gradient-text">Last-Minute Care Staffing<span>.</span></h1>
+    <p class="hero-sub">Qualified carers & nurses delivered to your door within <strong>60 minutes.</strong></p>
+    <a href="services.html" class="btn-animated">Explore Services</a>
   </div>
 </section>
 
-<!-- Services section (3 cards) -->
-<section id="services" class="services">
+<!-- Parallax Stats -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-card"><span class="count" data-target="1200">0</span><p>Homes</p></div>
+    <div class="stat-card"><span class="count" data-target="3700">0</span><p>Staff</p></div>
+    <div class="stat-card"><span class="count" data-target="47">0</span><p>Minutes</p></div>
+    <div class="stat-card"><span class="count" data-target="99.4">0</span><p>% Fill</p></div>
+  </div>
+</section>
+
+<!-- 3D Cards -->
+<section class="services">
   <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
+    <h2 class="section-title">Our Services</h2>
+    <div class="cards-3d">
+      <div class="card-3d">
         <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=800&q=80" alt="Healthcare Assistants">
         <h3>Healthcare Assistants</h3>
-        <p>Compassionate carers providing daily living support, personal care and vital-sign monitoring.</p>
-        <a href="healthcare-assistant.html" class="btn-card">Learn More</a>
+        <p>Full daily support & monitoring.</p>
+        <a href="healthcare-assistant.html" class="btn-3d">Learn More</a>
       </div>
-      <div class="card">
+      <div class="card-3d">
         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80" alt="Senior HCA">
-        <h3>Senior Healthcare Assistants</h3>
-        <p>Experienced leads who supervise junior staff, administer meds and oversee care plans.</p>
-        <a href="senior-hca.html" class="btn-card">Learn More</a>
+        <h3>Senior HCAs</h3>
+        <p>Medication & supervision leads.</p>
+        <a href="senior-hca.html" class="btn-3d">Learn More</a>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1581245350769-1e2ed1d8d6a8?auto=format&fit=crop&w=800&q=80" alt="Registered Nurses">
+      <div class="card-3d">
+        <img src="https://images.unsplash.com/photo-1581245350769-1e2ed1d8d6a8?auto=format&fit=crop&w=800&q=80" alt="Registered Nurse">
         <h3>Registered Nurses</h3>
-        <p>NMC-registered nurses for medication rounds, wound care, IV therapy and clinical leadership.</p>
-        <a href="registered-nurse.html" class="btn-card">Learn More</a>
+        <p>Clinical leadership & IV therapy.</p>
+        <a href="registered-nurse.html" class="btn-3d">Learn More</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Recruitment -->
-<section id="recruitment" class="recruitment">
+<!-- Dark section -->
+<section class="dark-section">
   <div class="container">
     <h2>Join Our Team</h2>
-    <p>We are recruiting carers, senior carers & nurses for flexible shifts nationwide. Competitive pay, free training and 24/7 support.</p>
-    <a href="contact.html" class="btn-primary">Apply Today</a>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p><strong>Phone:</strong> 01253 204 100</p>
-        <p><strong>Email:</strong> office@deofamerecruitment.co.uk</p>
-        <p><strong>Address:</strong> 8a Westcliffe Drive, Blackpool FY3 7HG</p>
-      </div>
-      <form action="https://formspree.io/f/YOUR_ID" method="POST">
-        <label>Name *<input type="text" name="name" required></label>
-        <label>Email *<input type="email" name="email" required></label>
-        <label>Message<textarea name="message" rows="4"></textarea></label>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </div>
+    <p>Flexible shifts, competitive pay, 24/7 support.</p>
+    <a href="recruitment.html" class="btn-animated">Apply Today</a>
   </div>
 </section>
 
 <!-- Footer -->
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2025 Deofame Recruitment Services Ltd. Registered in England & Wales No. 12345678</p>
+    <p>&copy; 2025 Deofame Recruitment Services Ltd</p>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
