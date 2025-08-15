@@ -3,87 +3,101 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Deofame Recruitment – Elkfield-style</title>
+  <title>Deofame Recruitment Services Ltd – Last-Minute Care Staffing</title>
+  <meta name="description" content="Elkfield-style website for Deofame – last-minute carers & nurses 24/7.">
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- Header (sticky, grey bar) -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#" class="logo"><img src="https://i.imgur.com/8nqhOZ1.png" alt="Deofame" width="220"></a>
+    <a href="index.html" class="logo">
+      <img src="https://i.imgur.com/8nqhOZ1.png" alt="Deofame Recruitment" width="220" height="55">
+    </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#recruitment">Recruitment</a></li>
-        <li><a href="#contact" class="btn-primary">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- Hero (full-width gradient) -->
 <section class="hero">
   <div class="hero-inner">
     <h1>Last-Minute Care Staffing – <em>Solved in Minutes</em></h1>
-    <p>Deofame Recruitment Services Ltd delivers qualified carers & nurses 24/7.</p>
-    <a href="#services" class="btn-large">View Services</a>
+    <p>Deofame Recruitment Services Ltd bridges the gap between care homes needing urgent cover and qualified healthcare professionals seeking flexible work.</p>
+    <a href="services.html" class="btn-primary large">View Our Services</a>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- Services section (3 cards) -->
 <section id="services" class="services">
   <div class="container">
     <h2>Our Services</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=700&q=80" alt="Healthcare Assistant">
+        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=800&q=80" alt="Healthcare Assistants">
         <h3>Healthcare Assistants</h3>
-        <p>Full personal-care support, vitals, mobility assistance.</p>
+        <p>Compassionate carers providing daily living support, personal care and vital-sign monitoring.</p>
+        <a href="healthcare-assistant.html" class="btn-card">Learn More</a>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=700&q=80" alt="Senior HCA">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80" alt="Senior HCA">
         <h3>Senior Healthcare Assistants</h3>
-        <p>Supervise juniors, administer meds, oversee plans.</p>
+        <p>Experienced leads who supervise junior staff, administer meds and oversee care plans.</p>
+        <a href="senior-hca.html" class="btn-card">Learn More</a>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1581245350769-1e2ed1d8d6a8?auto=format&fit=crop&w=700&q=80" alt="Registered Nurse">
+        <img src="https://images.unsplash.com/photo-1581245350769-1e2ed1d8d6a8?auto=format&fit=crop&w=800&q=80" alt="Registered Nurses">
         <h3>Registered Nurses</h3>
-        <p>NMC-registered for meds, IV therapy, wound care.</p>
+        <p>NMC-registered nurses for medication rounds, wound care, IV therapy and clinical leadership.</p>
+        <a href="registered-nurse.html" class="btn-card">Learn More</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- RECRUITMENT -->
+<!-- Recruitment -->
 <section id="recruitment" class="recruitment">
   <div class="container">
     <h2>Join Our Team</h2>
-    <p>Flexible shifts, competitive pay, 24/7 support.</p>
-    <a href="#contact" class="btn-large">Apply Today</a>
+    <p>We are recruiting carers, senior carers & nurses for flexible shifts nationwide. Competitive pay, free training and 24/7 support.</p>
+    <a href="contact.html" class="btn-primary">Apply Today</a>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- Contact -->
 <section id="contact" class="contact">
-  <div class="container grid-2">
-    <div>
-      <h2>Contact</h2>
-      <p>01253 204 100</p>
-      <p>office@deofamerecruitment.co.uk</p>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Phone:</strong> 01253 204 100</p>
+        <p><strong>Email:</strong> office@deofamerecruitment.co.uk</p>
+        <p><strong>Address:</strong> 8a Westcliffe Drive, Blackpool FY3 7HG</p>
+      </div>
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <label>Name *<input type="text" name="name" required></label>
+        <label>Email *<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4"></textarea></label>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </div>
-    <form action="https://formspree.io/f/YOUR_ID" method="POST">
-      <label>Name *<input type="text" name="name" required></label>
-      <label>Email *<input type="email" name="email" required></label>
-      <label>Message<textarea name="message" rows="4"></textarea></label>
-      <button type="submit" class="btn-large">Send</button>
-    </form>
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="site-footer">
-  <div class="container">© 2025 Deofame Recruitment Services Ltd</div>
+  <div class="container">
+    <p>&copy; 2025 Deofame Recruitment Services Ltd. Registered in England & Wales No. 12345678</p>
+  </div>
 </footer>
 
 </body>
