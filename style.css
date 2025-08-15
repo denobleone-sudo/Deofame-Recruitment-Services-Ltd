@@ -60,4 +60,7 @@ nav ul{display:flex;gap:2rem;list-style:none;}
   .hamburger{display:flex;}
   nav ul{display:none;flex-direction:column;gap:1.2rem;position:absolute;right:1rem;top:4.5rem;background:#fff;padding:1rem 1.5rem;border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,.08);}
   nav ul.open{display:flex;}
+  .service-card.hide, .blog-card.hide{opacity:0;transform:translateY(30px);}
+.service-card.show, .blog-card.show{opacity:1;transform:translateY(0);transition:.6s;}
 }
+
