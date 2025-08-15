@@ -1,0 +1,77 @@
+:root {
+  --clr-primary:#0057ff;
+  --clr-primary-light:#e5efff;
+  --clr-dark:#111827;
+  --clr-light:#f9fafb;
+  --clr-gray:#6b7280;
+  --radius:6px;
+  --max-width:1100px;
+  --font:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--font);color:var(--clr-dark);background:var(--clr-light);line-height:1.6;}
+img{max-width:100%;display:block;}
+.container{width:90%;max-width:var(--max-width);margin-inline:auto;}
+.grid-2{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.grid-3{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.grid-4{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+.btn-primary{display:inline-block;background:var(--clr-primary);color:#fff;padding:.75rem 1.5rem;border-radius:var(--radius);font-weight:600;text-decoration:none;transition:background .2s;}
+.btn-primary:hover{background:#0044cc;}
+.large{font-size:1.125rem;padding:1rem 2rem;}
+
+header{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.06);position:sticky;top:0;z-index:10;}
+.nav-flex{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;}
+nav ul{display:flex;gap:2rem;list-style:none;}
+nav a{font-weight:500;color:var(--clr-dark);text-decoration:none;}
+.hamburger{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;}
+.hamburger span{width:24px;height:3px;background:var(--clr-dark);}
+
+#hero{background:var(--clr-primary-light);padding:4rem 0;}
+.hero-grid{display:grid;gap:2rem;align-items:center;}
+.hero-grid h1{font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:1rem;}
+.hero-grid p{font-size:1.125rem;margin-bottom:2rem;color:var(--clr-gray);}
+
+#stats{background:#fff;padding:3rem 0;text-align:center;}
+#stats span{font-size:2.5rem;font-weight:700;color:var(--clr-primary);}
+#stats p{color:var(--clr-gray);}
+
+#services{padding:4rem 0;}
+.service-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.service-card img{aspect-ratio:16/9;object-fit:cover;}
+.service-card h3{padding:1rem 1.5rem .5rem;}
+.service-card p{padding:0 1.5rem 1.5rem;color:var(--clr-gray);}
+
+#process{background:var(--clr-light);padding:4rem 0;}
+.step{text-align:center;}
+.number{display:inline-grid;place-content:center;width:50px;height:50px;background:var(--clr-primary);color:#fff;border-radius:50%;font-weight:700;margin-bottom:1rem;}
+
+#blog{padding:4rem 0;}
+.blog-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.blog-card img{aspect-ratio:16/9;object-fit:cover;}
+.blog-card .content{padding:1.5rem;}
+.date{font-size:.875rem;color:var(--clr-gray);}
+.blog-card h3{margin:.5rem 0 .75rem;font-size:1.125rem;}
+.read-more{color:var(--clr-primary);font-weight:600;text-decoration:none;}
+
+#testimonials{padding:4rem 0;}
+.testimonial-slider blockquote{max-width:700px;margin:0 auto 2rem;font-style:italic;}
+.testimonial-slider cite{display:block;margin-top:.5rem;font-weight:600;color:var(--clr-gray);}
+
+#contact{background:var(--clr-primary-light);padding:4rem 0;}
+form{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,.05);}
+form h3{margin-bottom:1rem;}
+label{display:block;margin-bottom:1rem;}
+label span{font-weight:500;margin-bottom:.25rem;display:block;}
+input,select,textarea{width:100%;padding:.75rem;border:1px solid #d1d5db;border-radius:var(--radius);font-family:inherit;}
+button[type="submit"]{width:100%;margin-top:.5rem;}
+
+footer{background:var(--clr-dark);color:#fff;padding:2rem 0;font-size:.875rem;}
+.footer-flex{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;}
+footer nav ul{list-style:none;display:flex;gap:1.5rem;flex-wrap:wrap;}
+footer a{color:#d1d5db;text-decoration:none;}
+
+@media(max-width:768px){
+  .hamburger{display:flex;}
+  nav ul{display:none;flex-direction:column;gap:1rem;background:#fff;position:absolute;right:0;top:60px;padding:1rem 2rem;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,.1);}
+  nav ul.open{display:flex;}
+}
