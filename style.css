@@ -30,7 +30,18 @@ img{max-width:100%;display:block;border-radius:var(--radius);}
 .hero p{font-size:1.125rem;margin-bottom:2rem;opacity:.9;}
 .btn-primary{background:#fff;color:var(--blue);padding:.9rem 1.8rem;border-radius:var(--radius);font-weight:600;text-decoration:none;}
 .btn-large{font-size:1.125rem;padding:1.1rem 2.2rem;}
-
+/* --- Service detail pages --- */
+.page-hero{background:var(--blue);color:#fff;padding:3.5rem 0;text-align:center;}
+.detail-content{padding:3rem 0;}
+.detail-content img{width:100%;border-radius:var(--radius);margin-bottom:1.5rem;}
+.detail-content ul{list-style:disc;margin-left:1.5rem;margin-bottom:1.5rem;}
+.service-row{display:flex;gap:2rem;align-items:center;margin-bottom:3rem;}
+.service-row:nth-child(even){flex-direction:row-reverse;}
+.service-row img{flex:1 1 40%;border-radius:var(--radius);}
+.service-text{flex:1 1 60%;}
+@media(max-width:768px){
+  .service-row{flex-direction:column !important;}
+}
 /* ========= SECTIONS ========= */
 section{padding:4rem 0;}
 h2{text-align:center;margin-bottom:2.5rem;font-size:2rem;color:var(--blue);}
@@ -58,3 +69,4 @@ footer{background:var(--gray-dark);color:#fff;padding:2rem 0;font-size:.875rem;t
   .hero h1{font-size:2rem;}
   .contact-wrap{grid-template-columns:1fr;}
 }
+
